@@ -10,4 +10,15 @@
 
 @implementation Model
 
+-(instancetype)initWith:(NSURLSession *)session withIdentifier:(NSString *)identifier withURL:(NSString *)urlString withIndexPath:(NSIndexPath *)indexPath
+{
+    if (self = [super init]) {
+        _identifier = identifier;
+        _session = session;
+        _urlString = urlString;
+        _indexPath = indexPath;
+    }
+    return self;
+}
+
 @end
