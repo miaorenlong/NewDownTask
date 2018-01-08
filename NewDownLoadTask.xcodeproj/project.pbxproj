@@ -15,6 +15,12 @@
 		3BFFFC9E20031A9B00AE74CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFFC9D20031A9B00AE74CA /* main.m */; };
 		3BFFFCA820031A9B00AE74CA /* NewDownLoadTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFFCA720031A9B00AE74CA /* NewDownLoadTaskTests.m */; };
 		3BFFFCB320031A9B00AE74CA /* NewDownLoadTaskUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFFCB220031A9B00AE74CA /* NewDownLoadTaskUITests.m */; };
+		3BFFFCC320031C0100AE74CA /* RainbowProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFFCC020031C0100AE74CA /* RainbowProgress.m */; };
+		3BFFFCC420031C0100AE74CA /* video.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BFFFCC220031C0100AE74CA /* video.json */; };
+		3BFFFCC820031C3A00AE74CA /* DownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFFCC720031C3A00AE74CA /* DownLoadViewController.m */; };
+		3BFFFCD120031DF800AE74CA /* DownloadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFFCCE20031DF700AE74CA /* DownloadTableViewCell.m */; };
+		3BFFFCD220031DF800AE74CA /* DownloadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BFFFCCF20031DF800AE74CA /* DownloadTableViewCell.xib */; };
+		3BFFFCD5200333A000AE74CA /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFFCD4200333A000AE74CA /* Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,16 @@
 		3BFFFCAE20031A9B00AE74CA /* NewDownLoadTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewDownLoadTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFFFCB220031A9B00AE74CA /* NewDownLoadTaskUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewDownLoadTaskUITests.m; sourceTree = "<group>"; };
 		3BFFFCB420031A9B00AE74CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BFFFCC020031C0100AE74CA /* RainbowProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RainbowProgress.m; sourceTree = "<group>"; };
+		3BFFFCC120031C0100AE74CA /* RainbowProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainbowProgress.h; sourceTree = "<group>"; };
+		3BFFFCC220031C0100AE74CA /* video.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video.json; sourceTree = "<group>"; };
+		3BFFFCC620031C3A00AE74CA /* DownLoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownLoadViewController.h; sourceTree = "<group>"; };
+		3BFFFCC720031C3A00AE74CA /* DownLoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownLoadViewController.m; sourceTree = "<group>"; };
+		3BFFFCCE20031DF700AE74CA /* DownloadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTableViewCell.m; sourceTree = "<group>"; };
+		3BFFFCCF20031DF800AE74CA /* DownloadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadTableViewCell.xib; sourceTree = "<group>"; };
+		3BFFFCD020031DF800AE74CA /* DownloadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewCell.h; sourceTree = "<group>"; };
+		3BFFFCD3200333A000AE74CA /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		3BFFFCD4200333A000AE74CA /* Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +117,10 @@
 		3BFFFC8D20031A9B00AE74CA /* NewDownLoadTask */ = {
 			isa = PBXGroup;
 			children = (
+				3BFFFCC520031C0900AE74CA /* DownLoad */,
+				3BFFFCC120031C0100AE74CA /* RainbowProgress.h */,
+				3BFFFCC020031C0100AE74CA /* RainbowProgress.m */,
+				3BFFFCC220031C0100AE74CA /* video.json */,
 				3BFFFC8E20031A9B00AE74CA /* AppDelegate.h */,
 				3BFFFC8F20031A9B00AE74CA /* AppDelegate.m */,
 				3BFFFC9120031A9B00AE74CA /* ViewController.h */,
@@ -130,6 +150,20 @@
 				3BFFFCB420031A9B00AE74CA /* Info.plist */,
 			);
 			path = NewDownLoadTaskUITests;
+			sourceTree = "<group>";
+		};
+		3BFFFCC520031C0900AE74CA /* DownLoad */ = {
+			isa = PBXGroup;
+			children = (
+				3BFFFCC620031C3A00AE74CA /* DownLoadViewController.h */,
+				3BFFFCC720031C3A00AE74CA /* DownLoadViewController.m */,
+				3BFFFCD020031DF800AE74CA /* DownloadTableViewCell.h */,
+				3BFFFCCE20031DF700AE74CA /* DownloadTableViewCell.m */,
+				3BFFFCCF20031DF800AE74CA /* DownloadTableViewCell.xib */,
+				3BFFFCD3200333A000AE74CA /* Model.h */,
+				3BFFFCD4200333A000AE74CA /* Model.m */,
+			);
+			path = DownLoad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BFFFC9B20031A9B00AE74CA /* LaunchScreen.storyboard in Resources */,
+				3BFFFCC420031C0100AE74CA /* video.json in Resources */,
 				3BFFFC9820031A9B00AE74CA /* Assets.xcassets in Resources */,
 				3BFFFC9620031A9B00AE74CA /* Main.storyboard in Resources */,
+				3BFFFCD220031DF800AE74CA /* DownloadTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +304,10 @@
 				3BFFFC9320031A9B00AE74CA /* ViewController.m in Sources */,
 				3BFFFC9E20031A9B00AE74CA /* main.m in Sources */,
 				3BFFFC9020031A9B00AE74CA /* AppDelegate.m in Sources */,
+				3BFFFCC320031C0100AE74CA /* RainbowProgress.m in Sources */,
+				3BFFFCD5200333A000AE74CA /* Model.m in Sources */,
+				3BFFFCC820031C3A00AE74CA /* DownLoadViewController.m in Sources */,
+				3BFFFCD120031DF800AE74CA /* DownloadTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
