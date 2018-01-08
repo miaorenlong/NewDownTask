@@ -26,19 +26,18 @@
     [super viewDidLoad];
     NSString * path = [[NSBundle mainBundle]pathForResource:@"video" ofType:@"json"];
     self.arrayData = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:path] options:NSJSONReadingMutableContainers error:nil];
-//    NSString * stringPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
-    NSLog(@"%@",self.arrayList);
+    NSString * stringPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+    NSLog(@"%@",stringPath);
     [self UPUI];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(touchBack:)];
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(touchBack:)];
 }
--(void)touchBack:(UIBarButtonItem *)sender
-{
-    NSLog(@"%@",self.arrayList);
-    for (Model * model in self.arrayList) {
-        [model.session invalidateAndCancel];
-    }
-    [self.navigationController popViewControllerAnimated:YES];
-}
+//-(void)touchBack:(UIBarButtonItem *)sender
+//{
+////    for (Model * model in self.arrayList) {
+////        [model.session invalidateAndCancel];
+////    }
+//    [self.navigationController popViewControllerAnimated:YES];
+//}
 -(void)UPUI
 {
     UITableView * tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
